@@ -58,15 +58,24 @@ p {
 .big-title {
   font-size: 90px;
   position: absolute;
-  top: 250px;
   z-index: 1;
   color: white;
-  left: 47px;
   width: 200px;
   line-height: 73px;
   font-family: "K2D", sans-serif;
   letter-spacing: -1px;
-  transition: all 0.5s ease-in-out;
+  transition: all 3s ease-in-out;
+  left: 1600px;
+  top: 250px;
+}
+
+.show-big-title {
+  left: 49px;
+}
+
+.show-btn {
+  z-index: 10;
+  cursor: pointer;
 }
 
 .footer {
@@ -497,6 +506,13 @@ h4 {
   }
   .bg {
     height: 180vh;
+    background: rgb(178, 225, 251);
+    background: linear-gradient(
+      180deg,
+      rgba(178, 225, 251, 1) 0%,
+      rgba(178, 225, 251, 1) 40%,
+      rgba(255, 255, 255, 1) 100%
+    );
   }
 }
 
@@ -512,6 +528,15 @@ h4 {
     top: 288px;
     right: -40px;
   }
+  .bg {
+    background: rgb(178, 225, 251);
+    background: linear-gradient(
+      180deg,
+      rgba(178, 225, 251, 1) 0%,
+      rgba(178, 225, 251, 1) 40%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -523,6 +548,9 @@ h4 {
     top: 260px;
     line-height: 43px;
     transform: rotate(-90deg);
+    /* left: -10px; */
+  }
+  .show-big-title {
     left: -10px;
   }
   .logo-big {
@@ -539,6 +567,13 @@ h4 {
 @media only screen and (max-width: 450px) {
   .bg {
     height: 200vh;
+    background: rgb(178, 225, 251);
+    background: linear-gradient(
+      180deg,
+      rgba(178, 225, 251, 1) 0%,
+      rgba(178, 225, 251, 1) 40%,
+      rgba(255, 255, 255, 1) 100%
+    );
   }
   .logo-big {
     top: 900px;

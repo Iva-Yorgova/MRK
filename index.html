@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body onload="titleAnimation()">
 
     <div class="main-box">
 
@@ -53,7 +53,6 @@
 
                         </div>
 
-
                     </div>
 
                     <div class="bottom-box">
@@ -74,7 +73,6 @@
 
                     </div>
 
-
                 </div>
 
                 <img class="logo-big" src="./images/logo.png">
@@ -87,11 +85,7 @@
                     <p class="small-info">Copyright © 2023 | All Rights Reserved</p>
                 </div>
 
-
-
             </div>
-
-
 
         </div>
 
@@ -105,6 +99,10 @@
 
 <script>
 
+    function titleAnimation() {
+        let title = document.querySelector('.big-title');
+        title.classList.add('show-big-title');
+    }
 
 </script>
 
