@@ -59,7 +59,7 @@ p {
   font-size: 90px;
   position: absolute;
   z-index: 1;
-  color: white;
+  color: transparent;
   width: 200px;
   line-height: 73px;
   font-family: "K2D", sans-serif;
@@ -67,10 +67,16 @@ p {
   transition: all 3s ease-in-out;
   left: 1600px;
   top: 250px;
+  -webkit-text-stroke: 1.4px white;
 }
 
 .show-big-title {
   left: 49px;
+}
+
+.white-title {
+  color: white;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .show-btn {
@@ -103,7 +109,7 @@ p {
 }
 
 .image-1 {
-  background: url("./images/img-1.jpg");
+  background: url("./images/img-2.jpg");
   background-size: cover;
   background-position: center right;
   width: 100%;
@@ -113,7 +119,7 @@ p {
 }
 
 .image-2 {
-  background: url("./images/img-2.jpg");
+  background: url("./images/img-3.jpg");
   background-size: cover;
   background-position: center right;
   width: 100%;
@@ -124,7 +130,7 @@ p {
 }
 
 .image-3 {
-  background: url("./images/img-3.jpg");
+  background: url("./images/img-1.jpg");
   background-size: cover;
   background-position: center right;
   width: 100%;
